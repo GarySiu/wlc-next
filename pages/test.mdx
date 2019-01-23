@@ -1,3 +1,20 @@
+import Head from 'next/head'
+
+<Head>
+  <link rel="stylesheet" type="text/css" href="/static/prism.css" />
+</Head>
+
 # test page
 
 Hello world!
+
+```js
+var averageRating = watchList.reduce((result, movie, i) => {
+  if (movie.Director === 'Christopher Nolan') {
+    result['sum'] += parseFloat(movie.imdbRating);
+    result['count'] += 1;
+  }
+  if (i === result.last) return result['sum'] / result['count'];
+  return result;
+}, {sum: 0, count: 0, last: watchList.length - 1});
+```
